@@ -41,6 +41,10 @@ Then, you can run the script using:
 ./install_docker.sh
 ```
 
+By default, after docker is installed only admin has privilege to execute docker commands. so for all users to execute and run docker - run following command.
+```bash
+sudo chmod 666 /var/run/docker.sock
+```
 ## Create Nexus using docker container
 
 To create a Docker container running Nexus 3 and exposing it on port 8081, you can use the following command:
